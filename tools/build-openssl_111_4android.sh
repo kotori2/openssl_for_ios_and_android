@@ -75,7 +75,8 @@ echo $PATH
     ./Configure $SSL_TARGET $OPTIONS -fuse-ld="$TOOLCHAIN/$TRIBLE/bin/ld" zlib \
               no-asm \
               no-shared \
-              no-unit-test && \
+              no-unit-test \
+              -Qunused-arguments && \
     make && \
     make install DESTDIR=$DESTDIR || exit 128
 }
