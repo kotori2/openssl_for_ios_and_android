@@ -20,7 +20,7 @@ set -u
 
 OPENSSL_VERSION=1.1.1a
 
-API_LEVEL=16
+API_LEVEL=28
 
 SOURCE="$0"
 while [ -h "$SOURCE" ]; do
@@ -42,7 +42,7 @@ esac
 BUILD_DIR=$PWDPATH/../output/openssl_111_android_build
 OUT_DIR=$PWDPATH/../output/openssl_111_android
 
-BUILD_TARGETS="armeabi armeabi-v7a arm64-v8a x86 x86_64"
+BUILD_TARGETS="armeabi-v7a arm64-v8a x86 x86_64"
 
 if [ ! -d openssl-${OPENSSL_VERSION} ]
 then
